@@ -3,7 +3,7 @@ SUMMARY = "Dynamic Mesh Layer for RF24Network"
 LICENSE = "GPL-2.0"
 LIC_FILES_CHKSUM = "file://README.md;md5=ecfd54ceeb930d752852fd1513329e79"
 
-DEPENDS = "rf24 rf24-network"
+DEPENDS = "rf24 rf24network"
 
 SRC_URI = "git://github.com/nRF24/RF24Mesh.git;protocol=git;rev=master"
 #SRC_URI[md5sum] = "7246eed18fbdc922c302f42b52daac0f"
@@ -32,3 +32,10 @@ do_install() {
     install -d ${D}${includedir}/RF24Mesh
     install -m 0644 *.h ${D}${includedir}/RF24Mesh
 }
+
+FILES_${PN} += " \
+                ${includedir}/RF24Mesh/*.h \
+                "
+FILES_${PN}-dev += " \
+                ${includedir}/RF24Mesh/*.h \
+                "

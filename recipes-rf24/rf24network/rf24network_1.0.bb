@@ -35,3 +35,10 @@ do_install() {
     install -d ${D}${includedir}/RF24Network
     install -m 0644 *.h ${D}${includedir}/RF24Network
 }
+
+FILES_${PN} += " \
+                ${includedir}/RF24Network/*.h \
+                "
+FILES_${PN}-dev += " \
+                ${includedir}/RF24Network/*.h \
+                "
