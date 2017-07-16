@@ -1,0 +1,11 @@
+--- a/RF24Mesh.h
++++ b/RF24Mesh.h
+@@ -93,7 +93,7 @@
+    * @param data_rate The data rate (RF24_250KBPS,RF24_1MBPS,RF24_2MBPS) default:RF24_1MBPS
+    * @param timeout How long to attempt address renewal in milliseconds default:60000
+    */
+-  bool begin(uint8_t channel = MESH_DEFAULT_CHANNEL, rf24_datarate_e data_rate = RF24_1MBPS, uint32_t timeout=MESH_RENEWAL_TIMEOUT );
++  bool begin(uint8_t channel = MESH_DEFAULT_CHANNEL, rf24_datarate_e data_rate = RF24_250KBPS, uint32_t timeout=MESH_RENEWAL_TIMEOUT );
+   
+   /**
+    * Very similar to network.update(), it needs to be called regularly to keep the network
