@@ -5,7 +5,8 @@ LIC_FILES_CHKSUM = "file://README.md;md5=ecfd54ceeb930d752852fd1513329e79"
 
 DEPENDS = "rf24 rf24network"
 
-SRC_URI = "git://github.com/nRF24/RF24Mesh.git;protocol=git;rev=master"
+SRC_URI = "git://github.com/nRF24/RF24Mesh.git;protocol=git;rev=master \
+           file://0001-rf24mesh-change-data-rate.patch"
 #SRC_URI[md5sum] = "7246eed18fbdc922c302f42b52daac0f"
 #SRC_URI[sha256sum] = "375c31b52562b4d145a89790454533f0e54bb14494649e1aba7732404bc68623"
 

@@ -1,0 +1,6 @@
+
+recipes-gateway/gateway/\.gateway_0\.0\.1\.bb\.swp
+
+*.swp
+
+*.swo
