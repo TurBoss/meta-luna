@@ -26,6 +26,7 @@ export OETMP=/opt/yocto/poky/rpi-build/tmp
 cd ./meta-rpi/scripts
 ./copy_boot.sh mmcblk1
 ./copy_rootfs.sh mmcblk1 qt5
+./copy_rootfs.sh mmcblk1 core-image-minimal minimal
 
 # Environment
  $ . /opt/poky/2.3/environment-setup-cortexa7hf-neon-vfpv4-poky-linux-gnueabi
