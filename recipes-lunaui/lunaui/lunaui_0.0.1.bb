@@ -11,9 +11,10 @@ inherit npm-install
 
 do_compile() {
     cd ${S}
+    
     oe_runnpm_native install -g ionic@latest cordova@latest
     oe_runnpm_native install # Installs dependencies defined in package.json
-    cd ${S}
+    
     cordova platform add brwoser
     cordoba build brwoser
 }
