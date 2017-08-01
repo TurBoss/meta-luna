@@ -12,6 +12,7 @@ S = "${WORKDIR}/git"
 DEST_DIR = "/opt/server"
 
 do_install() {
+    cd ${S}
     install -d ${D}${DEST_DIR}
 
     cp -Rp ${S}/* ${D}${DEST_DIR}
