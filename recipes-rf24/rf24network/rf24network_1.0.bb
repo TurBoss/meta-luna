@@ -7,10 +7,9 @@ DEPENDS = "rf24"
 #DEPENDS = "rf24 bcm2835"
 
 #inherit pkgconfig
-#SRC_URI = "https://github.com/tmrh20/RF24Network.git"
-SRC_URI = "git://github.com/nRF24/RF24Network.git;protocol=git;rev=master"
-SRC_URI[md5sum] = "7246eed18fbdc922c302f42b52daac0f"
-SRC_URI[sha256sum] = "375c31b52562b4d145a89790454533f0e54bb14494649e1aba7732404bc68623"
+SRC_URI = "git://github.com/ProyectoLuna/RF24Network.git;protocol=git;rev=master"
+#SRC_URI[md5sum] = "7246eed18fbdc922c302f42b52daac0f"
+#SRC_URI[sha256sum] = "375c31b52562b4d145a89790454533f0e54bb14494649e1aba7732404bc68623"
 
 S = "${WORKDIR}/git"
 
